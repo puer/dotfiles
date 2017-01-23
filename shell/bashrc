@@ -1,0 +1,19 @@
+# User dependent .bashrc file
+
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+
+
+alias ls='ls --color'
+PS1="\w $"
+export CDPATH=.:~
+alias g='iconv -f GBK -t UTF-8'
+alias proxyon='ssh -N -l root -i ~/.ssh/aws_vpn.pem -L 8880:127.0.0.1:3128 54.186.207.105'
+# alias amux='ssh-agent mux'
+alias show='cat - <<"-----END PGP MESSAGE-----" | gpg -d ';
+alias hide='cat | gpg -e -r 0x1AE8F4BE! -a --comment "encoding: UTF-8" --emit-version --emit-version --emit-version'
+alias dev='ssh dev@192.168.171.130'
+alias mux='tmuxinator'
+alias cdp='cd ~/code/sip/python'
+
+. /usr/bin/virtualenvwrapper.sh

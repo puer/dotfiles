@@ -1,0 +1,38 @@
+# User dependent .bashrc file
+
+# If not running interactively, don't do anything
+[[ "$-" != *i* ]] && return
+
+
+alias ls='ls --color'
+PS1="\w $"
+
+
+### PICC CUSTMIZED BEGIN
+export HTTP_PROXY=http://proxy.piccnet.com.cn:3128
+export HTTPS_PROXY=http://proxy.piccnet.com.cn:3128
+export http_proxy=http://proxy.piccnet.com.cn:3128
+export https_proxy=http://proxy.piccnet.com.cn:3128
+
+export JAVA_HOME=~/jdk
+export ANT_HOME=~/app/apache-ant
+export PATH=$PATH:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/rubygems/bin:~/go:~/bin:$JAVA_HOME/bin:$ANT_HOME/bin:"/cygdrive/d/App/nodejs":"/cygdrive/c/Users/leizhouchun/AppData/Roaming/npm"
+export RUBYLIB=/usr/local/rubygems/lib:$RUBYLIB
+
+alias cddev='cd /cygdrive/w/PHPnow156/PHPnow156/PHPnow/htdocs/nzx/yunwei/jfxj'
+alias cdnzx='cd ~/wintemp/dev/svn/nzx/yunwei/jfxj'
+### PICC CUSTMIZED END
+
+alias ls='ls --color'
+PS1="\w $"
+export CDPATH=.:~
+alias g='iconv -f GBK -t UTF-8'
+alias proxyon='ssh -N -l root -i ~/.ssh/aws_vpn.pem -L 8880:127.0.0.1:3128 54.186.207.105'
+# alias amux='ssh-agent mux'
+alias show='cat - <<"-----END PGP MESSAGE-----" | gpg -d ';
+alias hide='cat | gpg -e -r 0x1AE8F4BE! -a --comment "encoding: UTF-8" --emit-version --emit-version --emit-version'
+alias dev='ssh dev@192.168.171.130'
+alias mux='tmuxinator'
+alias cdp='cd ~/code/sip/python'
+
+. /usr/bin/virtualenvwrapper.sh

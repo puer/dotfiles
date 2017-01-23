@@ -1,0 +1,15 @@
+BoldAsFont=no
+Font=Consolas
+CursorType=underscore
+FontHeight=10
+Locale=en_US
+Charset=UTF-8
+Transparency=off
+BoldAsColour=yes
+RightClickAction=paste
+PgUpDnScroll=no
+ClicksTargetApp=no
+Columns=153
+Rows=45
+OpaqueWhenFocused=no
+Scrollbar=none
