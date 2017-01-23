@@ -16,4 +16,10 @@ alias dev='ssh dev@192.168.171.130'
 alias mux='tmuxinator'
 alias cdp='cd ~/code/sip/python'
 
-. /usr/bin/virtualenvwrapper.sh
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+. $HOME/.local/bin/virtualenvwrapper.sh
+# . /usr/bin/virtualenvwrapper.sh

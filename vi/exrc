@@ -6,19 +6,7 @@ set modelines=4
 set term=ansi
 set ttytype=ansi
 set expandtab
-syntax on
 set ignorecase
 
-command Em %s/\$\([a-zA-Z_][0-9a-zA-Z_]*\(\[[^\]]\+]\)*\)/\$\{\1\}
 
-autocmd BufNewFile,BufRead *.p? compiler perl
-
-autocmd BufNewfile *.py :0r ~/.vim/templates/python.txt
-autocmd BufNewfile *.sh :0r ~/.vim/templates/shell.txt
-
-set noautoindent
-filetype on
-filetype plugin on
-filetype indent on
-" colorscheme desert
 
