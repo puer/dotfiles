@@ -18,3 +18,5 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmuxinator: tmux/tmuxinator
     ~/.exrc: vi/exrc
+    ~/.screenrc: screen/screenrc
+
