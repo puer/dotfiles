@@ -33,3 +33,6 @@ windows:
          - cd $HOME/code/sip/python/win-scrapy/src; tail -f wfm.log
          #- ssh dots@mojiang keeplive.sh
          #- ssh dots@mojiang sudo journalctl --system -f
+  - con: pwd
+  - con: pwd
+  - con: pwd

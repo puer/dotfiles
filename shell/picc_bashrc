@@ -19,8 +19,9 @@ export ANT_HOME=~/app/apache-ant
 export PATH=$PATH:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/rubygems/bin:~/go:~/bin:$JAVA_HOME/bin:$ANT_HOME/bin:"/cygdrive/d/App/nodejs":"/cygdrive/c/Users/leizhouchun/AppData/Roaming/npm"
 export RUBYLIB=/usr/local/rubygems/lib:$RUBYLIB
 
-alias cddev='cd /cygdrive/w/PHPnow156/PHPnow156/PHPnow/htdocs/nzx/yunwei/jfxj'
-alias cdnzx='cd ~/wintemp/dev/svn/nzx/yunwei/jfxj'
+#alias cddev='cd /cygdrive/w/PHPnow156/PHPnow156/PHPnow/htdocs/nzx/yunwei/jfxj'
+#alias cdnzx='cd ~/wintemp/dev/svn/nzx/yunwei/jfxj'
+alias cdkhyx='cd /cygdrive/d/khyx/product'
 ### PICC CUSTMIZED END
 
 alias ls='ls --color'

@@ -9,4 +9,4 @@ set expandtab
 set ignorecase
 
 
-
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
