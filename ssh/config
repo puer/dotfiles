@@ -8,5 +8,8 @@ ForwardAgent=yes
 Host mojiang 
     User dots
 
+Host ubuntu 
+    User dots
+
 Host localhost
     User leizhouchun
