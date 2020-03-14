@@ -1,3 +1,4 @@
+set t_Co=256
 set et
 set ts=4
 set sw=4
@@ -9,4 +10,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 inoremap jk <esc>
 inoremap <esc> <nop>
+
+filetype plugin indent on
+syntax on
 
