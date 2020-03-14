@@ -20,4 +20,5 @@
     ~/.exrc: vi/exrc
     ~/.screenrc: screen/screenrc
     ~/.vimrc: vi/vimrc
+    ~/.vim/colors/solarized.vim: vi/solarized.vim
 
