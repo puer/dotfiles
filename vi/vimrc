@@ -27,6 +27,7 @@ if has("autocmd")
     autocmd BufNewFile *.sh 0r ~/.vim/templates/shell
     autocmd BufNewFile *.py 0r ~/.vim/templates/python
     autocmd BufNewFile *.py /Hello
+    autocmd BufNewFile *.py :normal V
   augroup end
   augroup rst_ft
     au!
