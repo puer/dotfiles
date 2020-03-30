@@ -17,14 +17,20 @@ inoremap <esc> <nop>
 filetype plugin indent on
 syntax on
 
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
 if has("autocmd")
   augroup templates
+    au!
     autocmd BufNewFile *.sh 0r ~/.vim/templates/shell
     autocmd BufNewFile *.py 0r ~/.vim/templates/python
     autocmd BufNewFile *.py /Hello
   augroup end
+  augroup rst_ft
+    au!
+    autocmd BufNewFile,BufRead *.txt set syntax=rst
+  augroup END
 endif
+
