@@ -1,10 +1,12 @@
 set t_Co=256
 set et
-set ts=4
+set sts=4
 set sw=4
 set ai
 set rnu
 set nu
+set modelines=5
+set modeline
 inoremap <c-u> <esc>viwUea
 let mapleader=","
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -18,3 +20,11 @@ syntax on
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+if has("autocmd")
+  augroup templates
+    autocmd BufNewFile *.sh 0r ~/.vim/templates/shell
+    autocmd BufNewFile *.py 0r ~/.vim/templates/python
+    autocmd BufNewFile *.py /Hello
+  augroup end
+endif

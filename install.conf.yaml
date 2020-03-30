@@ -21,4 +21,5 @@
     ~/.screenrc: screen/screenrc
     ~/.vimrc: vi/vimrc
     ~/.vim/colors/solarized.vim: vi/solarized.vim
+    ~/.vim/templates: vi/templates
 
