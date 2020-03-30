@@ -1,8 +1,8 @@
 My dotfiles
 ============
 
-vim
-ctrlp
-screenrc
-bashrc
-git
+- vim
+- ctrlp
+- screenrc
+- bashrc
+- git
