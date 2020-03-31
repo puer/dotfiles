@@ -35,7 +35,16 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.txt set syntax=rst
     " au BufRead,BufNewFile *.txt set filetype=rst
   augroup END
+
+  augroup pythonkeys
+    au!
+    autocmd FileType python call PythonSetting()
+  augroup END
 endif
+
+function PythonSetting()
+    nnoremap <F5> :!python %<CR>
+endfunction
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
