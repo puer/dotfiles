@@ -18,3 +18,9 @@
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmuxinator: tmux/tmuxinator
     ~/.exrc: vi/exrc
+    ~/.screenrc: screen/screenrc
+    ~/.vimrc: vi/vimrc
+    ~/.vim/colors/solarized.vim: vi/solarized.vim
+    ~/.vim/templates: vi/templates
+    ~/.vim/bundle: vi/bundle
+

@@ -22,4 +22,5 @@
     ~/.vimrc: vi/vimrc
     ~/.vim/colors/solarized.vim: vi/solarized.vim
     ~/.vim/templates: vi/templates
+    ~/.vim/bundle: vi/bundle
 
