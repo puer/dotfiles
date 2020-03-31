@@ -26,13 +26,14 @@ windows:
 #        - vim
 #        - guard
   - moni:
-       layout: e763,153x44,0,0[153x14,0,0{76x14,0,0,10,76x14,77,0,14},153x14,0,15,11,153x14,0,30,12]
+          #       layout: e763,153x44,0,0[153x14,0,0{76x14,0,0,10,76x14,77,0,14},153x14,0,15,11,153x14,0,30,12]
+       layout: main-horizontal
        panes:
          - sm
          # - tunnel
          - cd $HOME/code/sip/python/win-scrapy/src; tail -f wfm.log
          #- ssh dots@mojiang keeplive.sh
          #- ssh dots@mojiang sudo journalctl --system -f
-  - con: pwd
-  - con: pwd
-  - con: pwd
+  - dots: cd /cygdrive/d/project/dots/bin
+  - ubuntu: ssh ubuntu
+  - raspberry: ssh pi@rp

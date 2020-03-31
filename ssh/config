@@ -11,5 +11,8 @@ Host mojiang
 Host ubuntu 
     User dots
 
+Host rp
+    User pi
+
 Host localhost
     User leizhouchun
