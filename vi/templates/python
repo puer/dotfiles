@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 
 def main():
     logger.debug("Hello %s", "world!")
-    for line in sys.stdin:
-        logger.debug(line)
+#    for line in sys.stdin:
+#        logger.debug(line)
     
 
 if '__main__' == __name__:

@@ -28,7 +28,7 @@ alias cdkhyx='cd /cygdrive/d/khyx/product'
 export PATH=$PATH:~/go:~/bin:/usr/sbin
 
 alias ls='ls --color'
-PS1="\w $"
+PS1="\w $ "
 export CDPATH=.:~
 alias g='iconv -f GBK -t UTF-8'
 alias proxyon='ssh -N -l root -i ~/.ssh/aws_vpn.pem -L 8880:127.0.0.1:3128 54.186.207.105'

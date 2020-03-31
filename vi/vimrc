@@ -43,7 +43,7 @@ if has("autocmd")
 endif
 
 function PythonSetting()
-    nnoremap <F5> :!python %<CR>
+    nnoremap <F5> :!time python %<CR>
 endfunction
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
