@@ -41,6 +41,7 @@
 [core]
 	autocrlf = false
 	quotepath = false
+    fileMode = false
 [credential]
 	helper = cache --timeout=360000
 [push]

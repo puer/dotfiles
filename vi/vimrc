@@ -1,0 +1,49 @@
+set t_Co=256
+set et
+set sts=4
+set sw=4
+set ai
+set rnu
+set nu
+set modelines=5
+set modeline
+inoremap <c-u> <esc>viwUea
+let mapleader=","
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
+inoremap jk <esc>
+inoremap <esc> <nop>
+
+filetype plugin indent on
+syntax on
+
+"let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
+if has("autocmd")
+  augroup templates
+    au!
+    autocmd BufNewFile *.sh 0r ~/.vim/templates/shell
+    autocmd BufNewFile *.py 0r ~/.vim/templates/python
+    autocmd BufNewFile *.py /Hello
+    autocmd BufNewFile *.py :normal V
+  augroup end
+  augroup rst_ft
+    au!
+    autocmd BufNewFile,BufRead *.txt set syntax=rst
+  augroup END
+endif
+
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_root_markers = ['pom.xml', '.p4ignore']
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+:helptags ~/.vim/bundle/ctrlp.vim/doc
