@@ -24,6 +24,9 @@ export RUBYLIB=/usr/local/rubygems/lib:$RUBYLIB
 alias cdkhyx='cd /cygdrive/d/khyx/product'
 ### PICC CUSTMIZED END
 
+#alias sshamz='ssh -i ~/.ssh/aws_vpn.pem root@54.186.207.105'
+export PATH=$PATH:~/go:~/bin:/usr/sbin
+
 alias ls='ls --color'
 PS1="\w $"
 export CDPATH=.:~
@@ -36,4 +39,11 @@ alias dev='ssh dev@192.168.171.130'
 alias mux='tmuxinator'
 alias cdp='cd ~/code/sip/python'
 
+export PYTHONPATH=${HOME}/code/sip/python
+export EDITOR=vim
+export PGDATA=${HOME}/psql_data
+export PGHOST=127.0.0.1
+export PGPORT=5432
+
 . /usr/bin/virtualenvwrapper.sh
+

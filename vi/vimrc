@@ -16,6 +16,7 @@ inoremap <esc> <nop>
 
 filetype plugin indent on
 syntax on
+set scrolloff=5
 
 "let g:solarized_termcolors=256
 set background=dark
@@ -32,6 +33,7 @@ if has("autocmd")
   augroup rst_ft
     au!
     autocmd BufNewFile,BufRead *.txt set syntax=rst
+    " au BufRead,BufNewFile *.txt set filetype=rst
   augroup END
 endif
 

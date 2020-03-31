@@ -13,7 +13,6 @@
     ~/.pdbrc: python/pdbrc
     ~/.bashrc: shell/picc_bashrc
     ~/.inputrc: shell/inputrc
-    ~/.netrc: ssh/netrc
     ~/.ssh/config: ssh/config
     ~/.tmux.conf: tmux/tmux.conf
     ~/.tmuxinator: tmux/tmuxinator

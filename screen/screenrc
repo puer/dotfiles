@@ -4,7 +4,8 @@ logfile ~/log/scr.%t.%n
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
-defscrollback 1000
+defscrollback 10000
+term xterm-256color
 
 #attrcolor b ".I"
 #termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E38;5;%dm'
