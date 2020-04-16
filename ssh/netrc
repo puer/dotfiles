@@ -1,4 +1,10 @@
 machine rp login dots password jjjjj
-machine mojiang login dots 
+machine mojiang login dots
 machine localhost login leizhouchun
 
+machine api.heroku.com
+  login alter001@163.com
+  password c2bf1838-5e6b-48ed-a22e-176c839a456a
+machine git.heroku.com
+  login alter001@163.com
+  password c2bf1838-5e6b-48ed-a22e-176c839a456a
