@@ -40,10 +40,19 @@ if has("autocmd")
     au!
     autocmd FileType python call PythonSetting()
   augroup END
+
+  augroup scmkeys
+    au!
+    autocmd FileType scheme call SchemeSetting()
+  augroup END
 endif
 
 function PythonSetting()
     nnoremap <F5> :!time python %<CR>
+endfunction
+
+function SchemeSetting()
+    nnoremap <F5> :w<CR>:!time guile -s %<CR>
 endfunction
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']

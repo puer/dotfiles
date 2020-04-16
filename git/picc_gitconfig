@@ -1,5 +1,5 @@
 [http]
-	proxy = http://proxy.piccnet.com.cn:3128
+#	proxy = http://proxy.piccnet.com.cn:3128
 
 [user]
 	name = dots111
