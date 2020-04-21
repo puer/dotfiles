@@ -13,6 +13,8 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 inoremap jk <esc>
 inoremap <esc> <nop>
+vmap <C-x> :!pbcopy<CR>  
+vmap <C-c> :w !pbcopy<CR><CR>
 
 filetype plugin indent on
 syntax on
@@ -48,7 +50,7 @@ if has("autocmd")
 endif
 
 function PythonSetting()
-    nnoremap <F5> :!time python %<CR>
+    nnoremap <F5> :w<CR>:!time python %<CR>
 endfunction
 
 function SchemeSetting()
