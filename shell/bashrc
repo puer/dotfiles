@@ -21,5 +21,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+export PATH=$HOME/.node/bin:$PATH
+export NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH" 
+export MANPATH="$HOME/.node/share/man:$MANPATH"
 . $HOME/.local/bin/virtualenvwrapper.sh
 # . /usr/bin/virtualenvwrapper.sh

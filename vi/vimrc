@@ -47,6 +47,10 @@ if has("autocmd")
     au!
     autocmd FileType scheme call SchemeSetting()
   augroup END
+  augroup vue
+    au!
+    autocmd BufNewFile,BufRead *.vue set syntax=html
+  augroup END
 endif
 
 function PythonSetting()
@@ -68,4 +72,5 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:netrw_dirhistmax = 0
 :helptags ~/.vim/bundle/ctrlp.vim/doc
