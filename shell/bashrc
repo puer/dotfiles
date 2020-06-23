@@ -24,5 +24,6 @@ alias l='ls -CF'
 export PATH=$HOME/.node/bin:$PATH
 export NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH" 
 export MANPATH="$HOME/.node/share/man:$MANPATH"
+export EDITOR=vi
 . $HOME/.local/bin/virtualenvwrapper.sh
 # . /usr/bin/virtualenvwrapper.sh
