@@ -46,3 +46,7 @@
 	helper = cache --timeout=360000
 [push]
 	default = simple
+[url "https://"]
+	insteadOf = git://
+[url "https://github.com/"]
+	insteadOf = git@github.com:
