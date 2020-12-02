@@ -15,4 +15,5 @@ Host rp
     User pi
 
 Host localhost
-    User leizhouchun
+    User vagrant
+    Port 2222

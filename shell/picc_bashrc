@@ -9,10 +9,10 @@ PS1="\w $"
 
 
 ### PICC CUSTMIZED BEGIN
-export HTTP_PROXY=http://proxy.piccnet.com.cn:3128
-export HTTPS_PROXY=http://proxy.piccnet.com.cn:3128
-export http_proxy=http://proxy.piccnet.com.cn:3128
-export https_proxy=http://proxy.piccnet.com.cn:3128
+#export HTTP_PROXY=http://proxy.piccnet.com.cn:3128
+#export HTTPS_PROXY=http://proxy.piccnet.com.cn:3128
+#export http_proxy=http://proxy.piccnet.com.cn:3128
+#export https_proxy=http://proxy.piccnet.com.cn:3128
 
 export JAVA_HOME=~/jdk
 export ANT_HOME=~/app/apache-ant
