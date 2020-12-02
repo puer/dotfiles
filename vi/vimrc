@@ -47,11 +47,23 @@ if has("autocmd")
     au!
     autocmd FileType scheme call SchemeSetting()
   augroup END
+j
   augroup vue
     au!
     autocmd BufNewFile,BufRead *.vue set syntax=html
   augroup END
+
+  augroup html
+    au!
+    autocmd FileType html call JsSetting()
+    autocmd FileType javascript call JsSetting()
+  augroup END
 endif
+
+function JsSetting()
+    set sts=2
+    set sw=2
+endfunction
 
 function PythonSetting()
     nnoremap <F5> :w<CR>:!time python %<CR>

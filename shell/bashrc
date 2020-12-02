@@ -38,3 +38,5 @@ if command -v powerline-shell >/dev/null 2>&1; then
         PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
     fi
 fi
+
+alias senv='. $HOME/sdfm/sdfmvenv/bin/activate'
