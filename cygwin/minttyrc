@@ -1,6 +1,7 @@
 BoldAsFont=no
 Font=Source Code Pro for Powerline
 CursorType=underscore
+SuppressOSC=112
 FontHeight=10
 Locale=en_US
 Charset=UTF-8
