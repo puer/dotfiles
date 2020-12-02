@@ -42,7 +42,6 @@
 [mergetool]
 	prompt = false
 [core]
-	autocrlf = true
 	quotepath = false
     fileMode = false
 
