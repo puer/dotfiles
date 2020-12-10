@@ -38,6 +38,7 @@ alias hide='cat | gpg -e -r 0x1AE8F4BE! -a --comment "encoding: UTF-8" --emit-ve
 alias dev='ssh dev@192.168.171.130'
 alias mux='tmuxinator'
 alias cdp='cd ~/code/sip/python'
+alias cdl='cd /cygdrive/d/ubuntu'
 
 export PYTHONPATH=${HOME}/code/sip/python
 export EDITOR=vim
