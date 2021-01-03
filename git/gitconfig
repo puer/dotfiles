@@ -39,7 +39,7 @@
 [mergetool]
 	prompt = false
 [core]
-	autocrlf = false
+	autocrlf = input
 	quotepath = false
     fileMode = false
 [credential]
