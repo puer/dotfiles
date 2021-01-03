@@ -7,6 +7,8 @@ set rnu
 set nu
 set modelines=5
 set modeline
+" Fix paste bug triggered by the above inoremaps
+set t_BE=
 inoremap <c-u> <esc>viwUea
 let mapleader=","
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
